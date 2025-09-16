@@ -83,6 +83,24 @@ button, .btn {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    p {
+        @media (width <= 480px) {
+            display: none;
+        }
+    }
+}
+
+.silicon-navbar-actions-account {
+    @media (width <= 768px) {
+        display: none;
+    }
+}
+
+.silicon-navbar-actions-hamburger {
+    @media (width > 768px) {
+        display: none;
+    }
 }
 
 .toggle {
