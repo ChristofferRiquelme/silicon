@@ -91,6 +91,59 @@ button, .btn {
     }
 }
 
+.toggle {
+    --_w: 40px;
+    --_h: 20px;
+    
+    width: var(--_w);
+    height: var(--_h);
+    flex-shrink: none;
+    position: relative;
+    display: inline-block;
+    
+    input[type="checkbox"] {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #bfbfbf;
+        border-radius: 100vw;
+        box-shadow: inset 0 0 3px #00000038;
+        
+        transition: 400ms;
+    }
+    
+    .slider::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        aspect-ratio: 1;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #00000057;
+        
+        transition: 400ms;
+    }
+    
+    input[type="checkbox"]:checked + .slider::before {
+        left: calc(100% - var(--_h));
+        background-color: var(--color-accent);
+    }
+    input[type="checkbox"]:checked + .slider {
+        background-color: var(--color-secondary);
+    }
+}
+
 .silicon-navbar-actions-account {
     @media (width <= 768px) {
         display: none;
@@ -103,55 +156,4 @@ button, .btn {
     }
 }
 
-.toggle {
-    --_w: 40px;
-    --_h: 20px;
-
-    width: var(--_w);
-    height: var(--_h);
-    flex-shrink: none;
-    position: relative;
-    display: inline-block;
-    
-    input[type="checkbox"] {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #bfbfbf;
-        border-radius: 100vw;
-        box-shadow: inset 0 0 3px #00000038;
-
-        transition: 400ms;
-    }
-
-    .slider::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        aspect-ratio: 1;
-        background-color: #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 5px #00000057;
-
-        transition: 400ms;
-    }
-
-    input[type="checkbox"]:checked + .slider::before {
-        left: calc(100% - var(--_h));
-        background-color: var(--color-accent);
-    }
-    input[type="checkbox"]:checked + .slider {
-        background-color: var(--color-secondary);
-    }
-}
+/* Hero section */
