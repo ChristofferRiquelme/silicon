@@ -157,3 +157,129 @@ button, .btn {
 }
 
 /* Hero section */
+
+
+.silicon-hero {
+    background: linear-gradient(178deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media (width >= 768px) {
+        padding-bottom: 0;
+    }
+}
+
+.silicon-hero-area {
+    display: flex;
+    flex-direction: column;
+
+    @media (width >= 768px) {
+        flex-direction: row;
+    }
+}
+
+.silicon-hero-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.silicon-hero-title {
+    font-size: 56px;
+    font-weight: 800;
+
+    @media (width <= 480px) {
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+.silicon-hero-title-row1,
+.silicon-hero-title-row2 {
+    display: block;
+}
+
+.silicon-hero-text {
+    font-size: 18px;
+    font-weight: 400;
+
+        @media (width <= 480px) {
+        text-align: center;
+    }
+}
+
+.silicon-hero-app-download-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    @media (width >= 768px) {
+        justify-content: flex-start;
+    }
+
+    @media (width <= 480px) {
+        display: block;
+    }
+}
+
+.silicon-hero-app-download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-button-download-background);
+    color: var(--color-button-download-text);
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    gap: 1rem;
+
+    @media (width <= 480px) {
+        margin-bottom: 15px;
+    }
+}
+
+.silicon-hero-app-download-button-google, .silicon-hero-app-download-button-apple {
+    height: 100%;
+}
+
+.silicon-hero-app-download-button-text-row1 {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.silicon-hero-app-download-button-text-row2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.silicon-hero-app-download-button-area {
+    background-color: var(--color-button-download-background);
+    color: var(--color-button-download-text);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.silicon-hero-image {
+    display: none;
+    /* border: 1px solid red; */
+
+    @media (width >= 768px) {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.silicon-hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
