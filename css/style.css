@@ -293,6 +293,10 @@ button, .btn {
         padding: 10px 20px;
         font-size: 0.6rem;
     }
+
+    @media (width >= 1025px) {
+        font-size: 0.8rem;
+    }
 }
 
 .silicon-hero-app-download-button-google, .silicon-hero-app-download-button-apple {
