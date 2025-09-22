@@ -55,7 +55,7 @@ button, .btn {
 }
 
 
-/* Header section */
+/* MARK: Header section */
 
 
 .silicon-container {
@@ -64,6 +64,16 @@ button, .btn {
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+
+    @media (width >= 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media (width >= 1025px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .silicon-navbar {
@@ -77,17 +87,23 @@ button, .btn {
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    @media (width >= 768px) {
+        gap: 3rem;
+    }
 }
 
 .silicon-navbar-actions-darkmode {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+}
 
-    p {
-        @media (width <= 480px) {
-            display: none;
-        }
+.silicon-navbar-actions-darkmode-text {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
     }
 }
 
@@ -145,19 +161,23 @@ button, .btn {
 }
 
 .silicon-navbar-actions-account {
-    @media (width <= 768px) {
-        display: none;
+    display: none;
+
+    @media (width > 1024px) {
+        display: block;
     }
 }
 
 .silicon-navbar-actions-hamburger {
-    @media (width > 768px) {
+    display: block;
+    cursor: pointer;
+
+    @media (width > 1024px) {
         display: none;
     }
 }
 
-/* Hero section */
-
+/* MARK: Hero section */
 
 .silicon-hero {
     background: linear-gradient(178deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
@@ -178,21 +198,48 @@ button, .btn {
     }
 }
 
+.silicon-tablet-hero-title {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
+        font-size: 36px;
+        font-weight: 800;
+        text-align: center;
+        max-width: 470px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    @media (width >= 1025px) {
+        display: none;
+    }
+}
+
 .silicon-hero-content {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 2rem;
-    /* border: 1px solid red; */
+
+    @media (width >= 768px) {
+        margin-top: 70px;
+    }
 }
 
 .silicon-hero-title {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 800;
+    text-align: center;
 
-    @media (width <= 480px) {
-        text-align: center;
-        font-size: 36px;
+    @media (width >= 768px) {
+        display: none;
+    }
+
+    @media (width >= 1025px) {
+        display: block;
+        font-size: 56px;
+        text-align: left;
     }
 }
 
@@ -204,25 +251,26 @@ button, .btn {
 .silicon-hero-text {
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
 
-        @media (width <= 480px) {
-        text-align: center;
+    @media (width >= 768px) {
+        text-align: left;
+        max-width: 270px;
+    }
+
+    @media (width >= 1025px) {
+        max-width: 440px;
     }
 }
 
 .silicon-hero-app-download-buttons {
-    display: flex;
-    justify-content: center;
+    display: block;
     align-items: center;
     margin-top: 2rem;
-    gap: 1rem;
 
     @media (width >= 768px) {
-        justify-content: flex-start;
-    }
-
-    @media (width <= 480px) {
-        display: block;
+        display: flex;
+        /* justify-content: flex-start; */
     }
 }
 
@@ -237,9 +285,13 @@ button, .btn {
     text-decoration: none;
     font-size: 0.8rem;
     gap: 1rem;
+    margin-bottom: 15px;
 
-    @media (width <= 480px) {
-        margin-bottom: 15px;
+    @media (width >= 768px) {
+        margin-bottom: 0;
+        margin-right: 15px;
+        padding: 10px 20px;
+        font-size: 0.6rem;
     }
 }
 
@@ -268,7 +320,6 @@ button, .btn {
 
 .silicon-hero-image {
     display: none;
-    /* border: 1px solid red; */
 
     @media (width >= 768px) {
         display: flex;
@@ -283,3 +334,66 @@ button, .btn {
     height: auto;
     display: block;
 }
+
+
+
+
+
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+
+    .silicon-hero {
+        padding-top: 3rem;
+    }
+
+    .silicon-hero-area {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 50px;
+    }
+
+    .silicon-hero-content {
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .silicon-hero-title {
+        display: none;
+    }
+
+    .silicon-tablet-hero-title {
+        display: block;
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .silicon-hero-text {
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 350px;
+    }
+
+    .silicon-hero-app-download-buttons {
+        justify-content: center;
+    }
+
+    .silicon-hero-app-download-button {
+        width: 126px;
+    }
+
+    .silicon-hero-image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex: 1;
+    }
+
+    .silicon-hero-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+} */
