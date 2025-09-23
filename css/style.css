@@ -344,3 +344,59 @@ button, .btn {
     height: auto;
     display: block;
 }
+
+/* MARK: Brands section */
+
+.silicon-brands {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
+        /* align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+        border-top: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB; */
+    }
+}
+
+.silicon-brands-items {
+    
+    @media (width >= 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+    }
+}
+
+.silicon-brands-item {
+
+    @media (width >= 768px) {
+        width: 160px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E5E7EB;
+        border-radius: 10px;
+    }
+
+    img {
+        max-width: 140px;
+        max-height: 30px;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+.silicon-brands-item:nth-child(n+5) {
+    
+    @media (width >= 768px) {
+        display: none;
+    }
+
+    @media (width >= 1025px) {
+        display: flex;
+    }
+}
