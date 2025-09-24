@@ -378,7 +378,7 @@ button, .btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #E5E7EB;
+        border: 1px solid #E2E5F1;
         border-radius: 10px;
     }
 
@@ -399,4 +399,8 @@ button, .btn {
     @media (width >= 1025px) {
         display: flex;
     }
+}
+
+.silicon-brands-item:nth-child(6) {
+    box-shadow: 0 2px 8px 0 #E2E5F1;
 }
