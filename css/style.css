@@ -352,11 +352,6 @@ button, .btn {
 
     @media (width >= 768px) {
         display: block;
-        /* align-items: center;
-        justify-content: space-between;
-        padding: 3rem 0;
-        border-top: 1px solid #E5E7EB;
-        border-bottom: 1px solid #E5E7EB; */
     }
 }
 
@@ -408,10 +403,6 @@ button, .btn {
     @media (width >= 768px) {
         display: none;
     }
-
-    /* @media (width >= 1025px) {
-        display: flex;
-    } */
 }
 
 .silicon-brands-item:nth-child(5) {
@@ -427,4 +418,30 @@ button, .btn {
     @media (width >= 1300px) {
         display: flex;
     }
+}
+
+/* MARK: Features section */
+
+.silicon-features-image {
+    display: none;
+}
+
+.silicon-features-content {
+    margin-top: 40px;
+}
+
+.silicon-features-content-info-title, .silicon-features-content-info-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.silicon-features-content-info-title {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+}
+
+.silicon-features-content-info-text {
+    margin-bottom: 40px;
+    font-size: 1.125rem;
 }
