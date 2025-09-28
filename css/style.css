@@ -446,10 +446,19 @@ button, .btn {
     font-size: 1.125rem;
 }
 
+.silicon-features-content-items {
+    
+    @media (width >= 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 40px;
+    }
+}
+
 .silicon-features-content-item {
     
     @media (width >= 768px) {
-        display: flex;
+        display: contents;
     }
 }
 
