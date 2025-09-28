@@ -422,23 +422,26 @@ button, .btn {
 
 /* MARK: Features section */
 
-/* .silicon-features-area {
-    
+.silicon-features-area {
+
     @media (width >= 1025px) {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 0 200px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 200px;
+    }
+
+    @media (width >= 1296px) {
         margin-top: 100px;
     }
-} */
+}
 
 .silicon-features-image {
     display: none;
 
-    @media (width >= 1025px) {
+    @media (width >= 1296px) {
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
+        max-width: 350px;
     }
 }
 
@@ -447,6 +450,7 @@ button, .btn {
 
     @media (width >= 1025px) {
         margin-top: 0;
+        max-width: 750px;
     }
 }
 
@@ -455,7 +459,7 @@ button, .btn {
     justify-content: center;
     text-align: center;
 
-    @media (width >= 1025px) {
+    @media (width >= 1296px) {
         justify-content: flex-start;
         text-align: left;
     }
