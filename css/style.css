@@ -628,6 +628,18 @@ button, .btn {
     position: relative;
 }
 
+.silicon-how-does-it-work-area-tablet-images > div:first-child {
+    overflow: hidden;
+    border-top-left-radius: 73px;
+    border-bottom-left-radius: 75px;
+}
+
+.silicon-how-does-it-work-area-tablet-images > div:last-child {
+    overflow: hidden;
+    border-top-right-radius: 73px;
+    border-bottom-right-radius: 75px;
+}
+
 .silicon-how-does-it-work-area-tablet-images img {
     width: 100%;
     height: auto;
