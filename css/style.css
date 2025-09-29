@@ -557,28 +557,35 @@ button, .btn {
     }
 }
 
-.silicon-how-does-it-work-area-images img:nth-child(n+3) {
-    display: none;
+.silicon-how-does-it-work-area-title {
+
+    @media (width >= 768px) {
+        font-size: 2rem;
+    }
 }
 
-.silicon-how-does-it-work-area-images {
+.silicon-how-does-it-work-area-mobile-images {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     position: relative;
+
+    @media (width >= 768px) {
+        display: none;
+    }
 }
 
-.silicon-how-does-it-work-area-image2 {
+.silicon-how-does-it-work-area-mobile-image2 {
     position: absolute;
-}
-
-.silicon-how-does-it-work-area-text {
-    display: none;
 }
 
 .silicon-how-does-it-work-area-mobile-info {
     margin-top: 30px;
+
+    @media (width >= 768px) {
+        display: none;
+    }
 }
 
 .silicon-how-does-it-work-area-mobile-info-title {
@@ -596,6 +603,70 @@ button, .btn {
     padding-bottom: 60px;
     text-align: center;
     
+    p {
+        color: #585C7B;
+    }
+}
+
+.silicon-how-does-it-work-area-tablet-images {
+    display: none;
+
+    @media (width >= 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+}
+
+.silicon-how-does-it-work-area-tablet-images > div {
+    flex: 1 1 0;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.silicon-how-does-it-work-area-tablet-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.silicon-how-does-it-work-area-tablet-image-container2 {
+    position: relative;
+}
+
+.silicon-how-does-it-work-area-tablet-image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.silicon-how-does-it-work-area-tablet-text {
+    display: none;
+
+    @media (width >= 768px) {
+        display: block;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+.silicon-how-does-it-work-area-tablet-text-title {
+    padding: 0 110px;
+    margin-bottom: 10px;
+
+    h3 {
+        font-size: 1.375rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-how-does-it-work-area-tablet-text-paragraph {
+    padding: 0 120px;
+
     p {
         color: #585C7B;
     }
