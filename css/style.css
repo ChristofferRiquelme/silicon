@@ -617,6 +617,10 @@ button, .btn {
         align-items: center;
         margin-top: 40px;
     }
+
+    @media (width >= 1025px) {
+        display: none;
+    }
 }
 
 .silicon-how-does-it-work-area-tablet-images > div {
@@ -662,7 +666,12 @@ button, .btn {
     @media (width >= 768px) {
         display: block;
         margin-top: 40px;
+        padding-bottom: 70px;
         text-align: center;
+    }
+
+    @media (width >= 1025px) {
+        display: none;
     }
 }
 
@@ -678,6 +687,62 @@ button, .btn {
 
 .silicon-how-does-it-work-area-tablet-text-paragraph {
     padding: 0 120px;
+
+    p {
+        color: #585C7B;
+    }
+}
+
+.silicon-how-does-it-work-area-desktop-images {
+    display: none;
+
+    @media (width >= 1025px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 100px;
+    }
+}
+
+.silicon-how-does-it-work-area-desktop-images > div {
+    flex: 1 1 0;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.silicon-how-does-it-work-area-desktop-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.silicon-how-does-it-work-area-desktop-text {
+    display: none;
+
+    @media (width >= 1025px) {
+        display: block;
+        margin-top: 40px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+}
+
+.silicon-how-does-it-work-area-desktop-text-title {
+    padding: 0 110px;
+    margin-bottom: 10px;
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-how-does-it-work-area-desktop-text-paragraph {
+    padding: 0 274px;
 
     p {
         color: #585C7B;
