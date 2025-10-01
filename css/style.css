@@ -45,7 +45,7 @@ button, .btn {
     color: var(--color-button-text);
     background-color: var(--color-button-background);
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 6px;
     text-decoration: none;
     transition: background 0.15s ease-in-out;
 
@@ -747,4 +747,102 @@ button, .btn {
     p {
         color: #585C7B;
     }
+}
+
+/* MARK: App features section */
+
+.silicon-app-features-area {
+    margin-top: 100px;
+}
+
+.silicon-app-features-area-items {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.silicon-app-features-area-item1 {
+    flex: 1;
+}
+
+.silicon-app-features-area-item1-title {
+    margin-bottom: 30px;
+    width: 400px;
+    padding-top: 100px;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-app-features-area-item1-list {
+    margin-bottom: 40px;
+}
+
+.silicon-app-features-area-item1-list ul {
+    list-style: none;
+    padding-left: 0;
+    color: #565973;
+}
+
+.silicon-app-features-area-item1-list li {
+    position: relative;
+    padding-left: 27px;
+    margin: 15px 0;
+}
+
+.silicon-app-features-area-item1-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../images/app-features/checkmark.svg') no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.silicon-app-features-area-item1-button {
+    width: 160px;
+}
+
+.silicon-app-features-area-item4-title {
+    padding-top: 70px;
+    max-width: 410px;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-app-features-area-item4-info {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.silicon-app-features-area-item4-info-first {
+    margin-right: 40px;
+}
+
+.silicon-app-features-area-item4-info-first, .silicon-app-features-area-item4-info-second {
+    max-width: 240px;
+}
+
+.silicon-app-features-area-item4-info-first-icon, .silicon-app-features-area-item4-info-second-icon {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #F3F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.silicon-app-features-area-item4-button {
+    width: 160px;
 }
