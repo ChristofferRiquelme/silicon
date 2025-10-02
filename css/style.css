@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading-text);
 }
 
-button, .btn {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -935,4 +935,91 @@ button, .btn {
 .silicon-testimonials-area-content2-item-client-role {
     font-size: 0.875rem;
     color: #9397AD;
+}
+
+/* MARK: FAQ section */
+
+.silicon-faq-area {
+    padding-top: 50px;
+}
+
+.silicon-faq-content-title {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-faq-content-text {
+    text-align: center;
+    margin-bottom: 50px;
+    
+    p {
+        font-size: 1.125rem;
+        color: #565973;
+    }
+}
+
+.silicon-faq-content-items {
+    display: none;
+}
+
+.silicon-faq-accordion1, .silicon-faq-accordion2, .silicon-faq-accordion3, .silicon-faq-accordion4, .silicon-faq-accordion5, .silicon-faq-accordion6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Manrope, sans-serif;
+    border: 1px solid #E2E5F1;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 365px;
+}
+
+.silicon-faq-accordion1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.silicon-faq-accordion6 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.silicon-faq-accordion-icon {
+    height: 36px;
+    width: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    border: 1px solid #F3F6FF;
+    background-color: #F3F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.silicon-faq-accordion-panel {
+    display: none;
+    padding: 15px 20px;
+    border: 1px solid #E2E5F1;
+
+    p {
+        color: #585C7B;
+        font-size: 0.875rem;
+    }
 }
