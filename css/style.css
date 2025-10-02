@@ -759,7 +759,6 @@ button, .btn {
     }
 }
 
-
 .silicon-app-features-area {
     margin-top: 100px;
 }
@@ -770,7 +769,7 @@ button, .btn {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 80px;
-    gap: 70px 0;
+    gap: 70px 40px;
 }
 
 .silicon-app-features-area-items > div {
