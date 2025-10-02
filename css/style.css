@@ -855,3 +855,84 @@ button, .btn {
     align-items: center;
     justify-content: center;
 }
+
+/* MARK: Testimonials section */
+
+.silicon-testimonials {
+    display: none;
+
+    @media (width >= 1025px) {
+        display: block;
+        background-color: #F3F6FF;
+    }
+}
+
+.silicon-testimonials-area {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 100px 0;
+}
+
+.silicon-testimonials-area-content1-item {
+    width: 301px;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+}
+
+.silicon-testimonials-area-content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-width: 0;
+}
+
+.silicon-testimonials-area-content2-item {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    box-shadow: 0 2px 8px 0 #E2E5F1;
+}
+
+.silicon-testimonials-area-content2-item-quote{
+    position: absolute;
+    top: -30px;
+    left: 10px;
+}
+
+.silicon-testimonials-area-content2-item-rating img {
+    width: 90px;
+    height: 15px;
+    padding-right: 10px;
+}
+
+.silicon-testimonials-area-content2-item-text p {
+    color: #565973;
+    margin: 20px 0;
+}
+
+.silicon-testimonials-area-content2-item-client {
+    display: flex;
+}
+
+.silicon-testimonials-area-content2-item-client-figure {
+    margin-right: 15px;
+}
+
+.silicon-testimonials-area-content2-item-client-name {
+    font-weight: bold;
+}
+
+.silicon-testimonials-area-content2-item-client-role {
+    font-size: 0.875rem;
+    color: #9397AD;
+}
