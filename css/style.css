@@ -995,6 +995,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.silicon-faq-accordion-container {
+    width: 100%;
+    max-width: 365px;
+
+    @media (width >= 768px) {
+        max-width: 700px;
+        border-radius: 8px;
+         
+        box-shadow: 0 2px 8px 0 #E2E5F1;
+    }
+}
+
 .silicon-faq-accordion {
     display: flex;
     align-items: center;
@@ -1007,14 +1019,23 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFFFFF;
     padding: 15px 20px;
     width: 100%;
-    max-width: 365px;
+    max-width: 100%;
 
     @media (width >= 768px) {
         width: 100%;
         max-width: 700px;
         border-radius: 8px;
         border: 0 solid #E2E5F1;
-        box-shadow: 0 2px 8px 0 #E2E5F1;
+    }
+}
+
+.silicon-faq-accordion.active {
+
+    @media (width >= 768px) {
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
     }
 }
 
@@ -1051,15 +1072,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.silicon-faq-accordion.active {
-
-    @media (width >= 768px) {
-        border-bottom: none;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-}
-
 .silicon-faq-accordion.active .silicon-faq-accordion-icon {
     background-color: #6366F1;
     border-color: #6366F1;
@@ -1081,8 +1093,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
     opacity: 0;
     max-height: 0;
-    max-width: 365px;
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     border: 0 solid transparent;
     transition:
@@ -1106,9 +1118,10 @@ h1, h2, h3, h4, h5, h6 {
     @media (width >= 768px) {
         max-width: 700px;
         width: 100%;
+        padding-top: 5px;
+        padding-bottom: 20px;
         border-top: none;
         border: 0 solid #E2E5F1;
-        box-shadow: 0 2px 8px 0 #E2E5F1;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
