@@ -949,6 +949,14 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
     }
+
+    @media (width >= 1025px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0 40px;
+        align-items: start;
+    }
 }
 
 .silicon-faq-content {
@@ -959,6 +967,12 @@ h1, h2, h3, h4, h5, h6 {
     @media (width >= 768px) {
         order: 1;
     }
+
+    @media (width >= 1025px) {
+        grid-column: 1;
+        grid-row: 1;
+        align-items: flex-start;
+    }
 }
 
 .silicon-faq-content-title {
@@ -967,6 +981,12 @@ h1, h2, h3, h4, h5, h6 {
 
     @media (width >= 768px) {
         width: 340px;
+    }
+
+    @media (width >= 1025px) {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
     }
 
     h2 {
@@ -985,6 +1005,10 @@ h1, h2, h3, h4, h5, h6 {
 
     @media (width >= 768px) {
         width: 410px;
+    }
+
+    @media (width >= 1025px) {
+        text-align: left;
     }
     
     p {
@@ -1005,6 +1029,11 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         max-width: 700px;
     }
+
+    @media (width >= 1025px) {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
 
 .silicon-faq-item {
@@ -1013,6 +1042,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 340px;
     border-radius: 8px;
+
+    @media (width >= 1025px) {
+        width: 100%;
+        max-width: 200px;
+    }
 }
 
 .silicon-faq-item-text {
@@ -1065,6 +1099,12 @@ h1, h2, h3, h4, h5, h6 {
         gap: 8px;
         margin-bottom: 40px;
         order: 2;
+    }
+
+    @media (width >= 1025px) {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        gap: 16px;
     }
 }
 
