@@ -531,19 +531,23 @@
         <div class="silicon-container">
             <div class="silicon-subscribe-area">
                 <div class="silicon-subscribe-items">
-                    <div class="silicon-subscribe-item">
+                    <div class="silicon-subscribe-item first">
                         <div class="silicon-subscribe-item-image">
                             <img src="images/subscribe/notification.svg" alt="Bell notification icon">
                         </div>
                         <div class="silicon-subscribe-item-text">
-                            <h4>Subscribe to our newsletter to stay informed about latest updates</h4>
+                            <h4>Subscribe to our newsletter</h4>
+                            <h4 class="silicon-subscribe-item-text-desktop">Subscribe to our newsletter to stay informed about latest updates</h4>
                         </div>
                     </div>
-                    <div class="silicon-subscribe-item">
-                        <form action="" class="silicon-subscribe-item-form">
-                            <input type="email" placeholder="Your email" required>
-                            <button type="submit" class="btn">Subscribe</button>
-                        </form>
+                    <div class="silicon-subscribe-item second">
+                        <div class="silicon-subscribe-item-form-input-wrapper">
+                            <span class="silicon-subscribe-item-form-input-icon">
+                                <img src="images/subscribe/envelope-icon.svg" alt="Envelope Icon">
+                            </span>
+                            <input id="subscribe-email" class="silicon-subscribe-item-form-input" type="email" placeholder="Your email" required>
+                            <button type="submit" class="silicon-subscribe-item-form-button btn">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </div>
