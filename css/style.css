@@ -1388,3 +1388,25 @@ h1, h2, h3, h4, h5, h6 {
         width: 140px;
     }
 }
+
+/* MARK: Footer section */
+
+.silicon-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 50px 0;
+    
+    p {
+        color: #9397AD;
+        font-size: 0.875rem;
+    }
+
+    @media (width >= 768px) {
+        padding: 20px 0;
+    }
+
+    @media (width >= 1025px) {
+        padding: 50px 0;
+    }
+}
