@@ -21,6 +21,163 @@
     --color-button-download-hover-background: #0B0F19;
 }
 
+[data-theme="dark"] {
+    --color-body-text: #A1A5B8;
+    --color-background: #0B0F19;
+    --color-heading-text: #FFFFFF;
+
+    --color-button-text: #FFFFFF;
+    --color-button-background: #6366F1;
+    --color-button-hover-background: #232e6a;
+
+    --color-button-download-text: #33354D;
+    --color-button-download-background: #F3F6FF;
+    --color-button-download-hover-background: #6366F1;
+}
+
+/* [data-theme="dark"] .silicon-header,
+[data-theme="dark"] .silicon-hero {
+    background: linear-gradient(178deg, rgba(255,255,255,0.07) 0%, rgba(218,70,239,0.05) 42%, rgba(99,102,241,0.07) 83%), #181B22;
+} */
+
+[data-theme="dark"] .silicon-navbar-logotype {
+    content: url('../images/logo-dark.svg');
+}
+
+[data-theme="dark"] .toggle .slider,
+[data-theme="dark"] .toggle input[type="checkbox"]:checked + .slider {
+    background-color: #6366F1 !important;
+}
+
+[data-theme="dark"] .toggle .slider::before {
+    background-color: #fff !important;
+}
+
+[data-theme="dark"] .silicon-navbar-actions-hamburger {
+    content: url('../images/hamburger-dark-mode.svg');
+}
+
+[data-theme="dark"] .silicon-hero-app-download-button-apple {
+  content: url('../images/apple-logo-dark.svg');
+}
+
+[data-theme="dark"] .silicon-brands-item {
+  border: 1px solid rgba(226, 229, 241, 0.15);
+}
+
+[data-theme="dark"] .silicon-brands-item:nth-child(6) {
+  box-shadow: none;
+  background-color: rgba(226, 229, 241, 0.04);
+}
+
+[data-theme="dark"] .silicon-features-content-item-icon {
+    background: rgba(99, 102, 241, 0.08);
+}
+
+[data-theme="dark"] .silicon-how-does-it-work {
+    background-color: #181B22;
+}
+
+[data-theme="dark"] .silicon-how-does-it-work-area-desktop-text-paragraph p {
+    color: #A1A5B8;
+}
+
+[data-theme="dark"] .silicon-app-features-area-item1-list ul {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .silicon-app-features-area-item4-info-first-icon, .silicon-app-features-area-item4-info-second-icon {
+    background: rgba(99, 102, 241, 0.08);
+}
+
+[data-theme="dark"] .silicon-app-features-area-item4-info-second-icon {
+    background: rgba(99, 102, 241, 0.08);
+}
+
+[data-theme="dark"] .silicon-testimonials {
+    background-color: #181B22;
+}
+
+[data-theme="dark"] .silicon-testimonials-area-content2-item {
+    box-shadow: none;
+    background-color: #232630;
+    border: none;
+}
+
+[data-theme="dark"] .silicon-testimonials-area-content2-item-text p {
+    color: #A1A5B8;
+}
+
+[data-theme="dark"] .silicon-testimonials-area-content2-item-client-name {
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] body p {
+    color: #A1A5B8 !important;
+}
+
+[data-theme="dark"] .silicon-faq-item {
+    
+    @media (width >= 1025px) {
+        border: 1px solid rgba(226, 229, 241, 0.15);
+    }
+}
+
+[data-theme="dark"] .silicon-faq-accordion-container {
+    box-shadow: none;
+}
+
+[data-theme="dark"] .silicon-faq-accordion {
+    background-color: #232630;
+    color: #FFFFFF;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .silicon-faq-accordion-panel {
+    background-color: #232630;
+}
+
+[data-theme="dark"] .silicon-faq-accordion-panel.open {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: none;
+}
+
+[data-theme="dark"] .silicon-faq-accordion-icon {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="dark"] .silicon-faq-accordion-icon img {
+    content: url('../images/faq/chevron-white.svg');
+}
+
+[data-theme="dark"] .silicon-subscribe-area {
+    background-color: #181B22;
+}
+
+[data-theme="dark"] .silicon-subscribe-item-form-input {
+    background-color: #FFFFFF;
+    opacity: 1;
+    
+    @media (width >= 1025px) {
+        background-color: #232630;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+[data-theme="dark"] .silicon-subscribe-item-form-input-icon {
+
+    @media (width >= 1025px) {
+        content: url('../images/subscribe/envelope-dark.svg');
+        width: 20px;
+    }
+}
+
+[data-theme="dark"] .silicon-subscribe-item-form-button {
+    border: 0 solid #E2E5F1;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
